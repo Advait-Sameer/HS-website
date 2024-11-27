@@ -3,113 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hand and Spoon Ice Cream</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #f8b500;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0.5rem 0;
-        }
-        .hero {
-            background: url('https://example.com/ice-cream-banner.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 4rem 1rem;
-        }
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.7rem 1.5rem;
-            background: white;
-            color: #f8b500;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 2rem;
-            background: #fff8e1;
-        }
-        .feature {
-            text-align: center;
-            margin: 1rem;
-            max-width: 300px;
-        }
-        .feature img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        footer a {
-            color: #f8b500;
-            text-decoration: none;
-        }
-    </style>
+    <title>Hand & Spoon Ice Cream</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Hand & Spoon Ice Cream</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Hand and Spoon Ice Cream</h1>
-    <p>Redondo's sweetest scoop shop!</p>
-</header>
+    <section id="hero">
+        <h2>Welcome to Hand & Spoon Ice Cream!</h2>
+        <p>Experience the best homemade ice cream made fresh daily with love and quality ingredients!</p>
+        <a href="#menu" class="cta-btn">Explore Our Flavors</a>
+    </section>
 
-<section class="hero">
-    <h2>Handcrafted Ice Cream, Just for You</h2>
-    <p>Discover our mouthwatering flavors made fresh daily with the finest ingredients.</p>
-    <a href="#flavors" class="button">Explore Flavors</a>
-</section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in 2024, Hand & Spoon Ice Cream brings you the freshest homemade ice cream made with exclusive recipes and top-quality ingredients. With over 100 flavors, we're dedicated to creating delicious and creamy treats for everyone!</p>
+    </section>
 
-<section id="flavors" class="features">
-    <div class="feature">
-        <img src="https://example.com/vanilla.jpg" alt="Vanilla Ice Cream">
-        <h3>Classic Vanilla</h3>
-        <p>Our rich and creamy vanilla is anything but plain!</p>
-    </div>
-    <div class="feature">
-        <img src="https://example.com/chocolate.jpg" alt="Chocolate Ice Cream">
-        <h3>Decadent Chocolate</h3>
-        <p>Deep, indulgent chocolate that's sure to satisfy.</p>
-    </div>
-    <div class="feature">
-        <img src="https://example.com/strawberry.jpg" alt="Strawberry Ice Cream">
-        <h3>Fresh Strawberry</h3>
-        <p>Made with real strawberries for a burst of flavor.</p>
-    </div>
-</section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>We make our ice cream fresh daily, offering a variety of flavors. Here are some of our favorites:</p>
+        <ul>
+            <li><strong>Chocolate Fudge Brownie</strong> - Rich and creamy with chunks of fudge brownie</li>
+            <li><strong>Vanilla Bean Dream</strong> - Classic, smooth vanilla with real vanilla beans</li>
+            <li><strong>Mint Chocolate Chip</strong> - Refreshing mint with crunchy chocolate chips</li>
+            <li><strong>Caramel Crunch</strong> - Sweet caramel with a crunchy surprise</li>
+            <li><strong>Seasonal: Pumpkin Spice</strong> - Perfect for the fall with a hint of spice</li>
+        </ul>
+        <p>We also serve yogurt, shakes, and sorbets to suit everyone's preferences!</p>
+    </section>
 
-<footer>
-    <p>Visit us in Redondo! <a href="https://maps.google.com">Get Directions</a></p>
-    <p>&copy; 2024 Hand and Spoon Ice Cream. All rights reserved.</p>
-</footer>
+    <section id="locations">
+        <h2>Our Locations</h2>
+        <p>Find a Hand & Spoon Ice Cream store near you!</p>
+        <ul>
+            <li><strong>California</strong> - 123 Ice Cream Blvd, Los Angeles</li>
+            <li><strong>Ohio</strong> - 456 Sweet Street, Cleveland</li>
+            <li><strong>New York</strong> - 789 Creamy Lane, New York City</li>
+        </ul>
+        <p>Visit us for a scoop (or two) of happiness!</p>
+    </section>
 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
+        <p>Email us at: <a href="mailto:contact@handandspoon.com">contact@handandspoon.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hand & Spoon Ice Cream. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
