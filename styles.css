@@ -18,26 +18,55 @@ body {
 }
 
 
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  background: #ff69b4;
-  color: white;
-  position: fixed; /* Fixes the navbar to the top */
-  width: 100%;
+  position: fixed;
   top: 0;
+  width: 100%;
+  text-align: center;
+  background: white;
   z-index: 1000;
 }
+
+/* Brand Name */
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5rem;
+  color: black;
+  font-family: "Georgia", serif; /* Adjust to your preferred font */
+}
+
+/* Border */
+.navbar::after {
+  content: '';
+  display: block;
+  height: 1rem; /* Slim border */
+  background: repeating-linear-gradient(
+    90deg,
+    pink 0%,
+    pink 10%,
+    black 10%,
+    black 20%,
+    white 20%,
+    white 30%
+  );
+}
+
 
 
 .navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
+  color: rgb(190, 49, 150);
 }
 
 
@@ -49,7 +78,7 @@ body {
 
 
 .nav-links a {
-  color: white;
+  color: rgb(190, 49, 150);
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s ease;
@@ -57,7 +86,7 @@ body {
 
 
 .nav-links a:hover {
-  color: #f8f8f8;
+  color: rgb(190, 49, 150);
 }
 
 
