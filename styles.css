@@ -1,15 +1,24 @@
 /* styles.css */
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* Global Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  color: #333; /* Darker text for readability */
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444; /* Softer text color */
+}
 
 .container {
   width: 90%;
@@ -30,7 +39,8 @@ body {
   top: 0;
   width: 100%;
   text-align: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -48,15 +58,14 @@ body {
 .navbar::after {
   content: '';
   display: block;
-  height: 1rem; /* Slim border */
-  background: repeating-linear-gradient(
+  height: 3px; /* Slimmer border */
+  background: linear-gradient(
     90deg,
     pink 0%,
-    pink 10%,
-    black 10%,
-    black 20%,
-    white 20%,
-    white 30%
+    black 25%,
+    white 50%,
+    pink 75%,
+    black 100%
   );
 }
 
@@ -81,12 +90,14 @@ body {
   color: rgb(190, 49, 150);
   text-decoration: none;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 1rem; /* Added padding */
 }
 
 
 .nav-links a:hover {
-  color: rgb(190, 49, 150);
+  color: #ff69b4;
+  transform: translateY(-2px); /* Slight bounce effect */
 }
 
 
@@ -112,7 +123,9 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
+
 
 
 .hero p {
@@ -133,12 +146,13 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 
 .hero .btn:hover {
   background: #ff1493;
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
 
@@ -181,9 +195,10 @@ p {
 }
 
 
+
 .flavor-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 
@@ -193,6 +208,16 @@ footer {
   color: white;
   text-align: center;
   padding: 1.5rem 0;
+  position: relative;
 }
 
-
+footer::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, pink, white, black);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
