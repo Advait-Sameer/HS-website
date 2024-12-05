@@ -1,16 +1,16 @@
 // Smooth Scrolling for Navbar Links
 document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-      targetSection.scrollIntoView({
-        behavior: 'smooth',
-      });
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({
+      behavior: 'smooth',
     });
   });
-  
-  // Sticky Navbar Shadow
+});
+
+// Sticky Navbar Shadow
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
@@ -19,6 +19,7 @@ window.addEventListener('scroll', () => {
     navbar.style.boxShadow = 'none';
   }
 });
+
 // Back to Top Button
 const backToTopBtn = document.createElement('button');
 backToTopBtn.textContent = '⬆️';
@@ -49,10 +50,11 @@ backToTopBtn.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
 // Interactive Flavor Grid
 const flavorItems = document.querySelectorAll('.flavor-item');
 flavorItems.forEach(item => {
   item.addEventListener('click', () => {
-    alert('More information about this flavor coming soon!');
+    // Add any functionality here if needed
   });
 });
